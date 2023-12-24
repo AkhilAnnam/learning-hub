@@ -1,0 +1,100 @@
+.about_page{
+  background-image: linear-gradient(to right, rgba(20, 19, 19, 0), rgba(200,255,255,1));
+}
+.about_up{
+  display: flex;
+  flex-direction: column;
+}
+.about_img1{
+  width: 50%;
+  margin-top: 50px;
+
+}
+.about_img1 img{
+  width: 100%;
+  border-radius: 30%;
+  height: auto;
+}
+.about_about{
+  margin-left: 10px;
+  width: 50%;
+  font-size: 25px;
+  margin-top: 100px;
+  text-align: center;
+}
+@media(min-width: 768px){
+  .about_up{
+    flex-direction: row;
+  }
+  .about_img1{
+    flex:1;
+    text-align: left;
+  }
+}
+.about__counter{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.first-row{
+
+  display: flex;
+  gap: 70px;
+  font-size: larger;
+}
+
+.counter{
+  font-weight: 700;
+}
+.about_why{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.why{
+  width: 50%;
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+.about_img3{
+  width: 50%;
+  text-align: center;
+}
+.about_img3 img{
+  width: 100%;
+  border-radius: 50%;
+}
+.why img{
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 768px){
+  .about_why{
+    flex-direction: row;
+  }
+  .why,.about_img3{
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    /* text-align: center; */
+}
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .about_up {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_img1,
+  .about_about {
+    margin: 0; /* Remove the margin for smaller screens */
+  }
+}

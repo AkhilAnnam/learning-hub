@@ -1,0 +1,87 @@
+/* Import your font awesome styles if needed */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+ 
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-image: url(./logo.png); */
+}
+
+.sign-screen {
+  display: flex;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sign-screen__content {
+  padding: 20px;
+  width: 100%; /* Adjusted to 100% for responsiveness */
+  background-color: #fff;
+}
+
+.sign {
+  text-align: center;
+}
+
+.sign__field {
+  margin-bottom: 20px;
+}
+
+.sign__icon {
+  font-size: 18px;
+  color: #777;
+  margin-right: 8px;
+  /* position: relative; */
+  
+}
+
+.sign__input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* position: absolute; */
+}
+
+.btnbutton {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.button__text {
+  margin-right: 4px;
+}
+
+.button__icon {
+  font-size: 14px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sign-screen {
+    flex-direction: column;
+  }
+
+  .sign-screen__content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,176 @@
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+/* .login-container{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+.login-left , .login-right{
+    
+    width: 50%;
+}
+.login-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-cen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50PX;
+}
+.login-cen>h1{
+    padding: 0;
+}
+.login-pp {
+    font-size: small;
+    margin-bottom: 15px;
+}
+.login-form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.inp{
+    display: block;
+    width: 350px;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 10px;
+    background-color: bisque;
+    
+}
+.login-bla {
+    position: relative;
+}
+.login-bla i {
+    position:absolute;
+    left: 20px;
+    top: 20px;
+
+}
+  .button9{
+    border-radius:10px;
+    width: 350px;
+    padding: 20px;
+    background-color: black;
+    color: white; 
+} 
+fieldset {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    
+    padding: 5px;
+}
+.login-btn2 {
+    display: block;
+    color: black;
+    background-color: white;
+}
+.login-CLA {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+} */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.login-container{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+.login-left , .login-right{
+    
+    width: 50%;
+}
+.login-left{
+    display: flex;
+    flex-direction: column;
+    /* justify-self: unset; */
+    justify-content: center;
+    align-items: center;
+}
+.cen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50PX;
+}
+.cen>h1{
+    margin: 20px;
+    padding: 0;
+}
+.PP {
+    font-size: small;
+    margin-bottom: 15px;
+}
+.form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.inp{
+    display: block;
+    width: 350px;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 10px;
+    background-color: bisque;
+    
+}
+.bla {
+    position: relative;
+}
+.bla i {
+    position:absolute;
+    left: 20px;
+    top: 20px;
+
+}
+button{
+    border-radius:10px;
+    width: 350px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+fieldset {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    
+    padding: 5PX;
+}
+.btn2 {
+    display: block;
+    color: black;
+    background-color: white;
+}
+.CLA {
+    display: flex;
+    flex-direction: column;
+    gap: 20PX;
+    
+}
+

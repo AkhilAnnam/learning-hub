@@ -1,0 +1,37 @@
+.free-course p{
+    font-size: 50px;
+    background-color: #bdafd4;
+} 
+
+.free-free {
+    background: linear-gradient(to right, #e7beee, #bdafd4);
+
+}
+
+.card-body{
+    background-color: rgb(237, 231, 208) !important;
+
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .free-course {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .my-2 {
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .card-body {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .card-img-top {
+    max-width: 100%; /* Make the image responsive */
+  }
+}
+
+/* Add your existing styles below */
+/* ... */
+

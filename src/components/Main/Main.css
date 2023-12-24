@@ -1,0 +1,31 @@
+/* Your CSS file, e.g., Main.css */
+.main11 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left1 {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .right1 {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+  }
+  
+  .right1 img {
+    width: 90%;
+    height: auto;
+    border: 2px solid #ccc; /* Set your desired outline color */
+    transition: transform 0.3s;
+  }
+  
+  .right1 img:hover {
+    transform: scale(1.1);/* Adjust the scale factor as needed */
+    border-color: #c2e8c3; /* Set your desired border color on hover */
+  }
+   

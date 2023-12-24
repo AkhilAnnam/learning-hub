@@ -1,0 +1,36 @@
+.scroll-container {
+    overflow: hidden;
+    margin-top: 100px;
+  }
+  
+  .scroll-content {
+    display: flex;
+    animation: scroll 15s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(infinite);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .scroll-content {
+      animation: none; 
+      transform: translateX(infinite); 
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
+      white-space: nowrap;
+    }
+  
+    img {
+      width: 100px; 
+      height: auto;
+      margin-right: 10px; 
+    }
+  }

@@ -1,0 +1,245 @@
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* padding-right: 40px; */
+  }
+  .nav-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-wrapper {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .nav-wrapper {
+      width: 95%;
+    }
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(13, 26, 38);
+    margin-left: 28px;
+    height: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .logo-img {
+    width: 50px;
+    height:50px ;
+  }
+  @media (max-width: 768px) {
+    .logo {
+      margin-left: 10px;
+    }
+  }
+  
+  #navbar ul {
+    list-style: none;
+    text-align: right;
+    margin-top: -2px;
+  }
+  
+  @media (max-width: 640px) {
+    #navbar ul {
+      text-align: center;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    #navbar ul {
+      display: inline-block;
+    }
+  }
+  
+  #navbar li {
+    display: inline-block;
+  }
+  
+  #navbar li a {
+    color: rgb(13, 26, 38);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    margin: 0 10px;
+    padding: 0 5px;
+    font-size: 1.3rem;
+    height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+  }
+  
+@media (max-width: 768px) {
+    /* Adjust padding and margins for smaller screens */
+    #navbar li a {
+      margin: 0 8px;
+      padding: 0 3px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    /* Further adjust padding and margins for mobile screens */
+    #navbar li a {
+      margin: 0 5px;
+      padding: 0 2px;
+    }
+  }
+  
+  #navbar li a:hover {
+    color: rgb(28, 121, 184);
+  }
+  
+  /* Animated bottom line */
+  #navbar li a::before,
+  #navbar li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(13, 26, 38);
+    transition: all 0.5s ease;
+  }
+  
+  #navbar li a::before {
+    right: 50%;
+  }
+  
+  #navbar li a:after {
+    left: 50%;
+    background: rgb(13, 26, 38);
+  }
+  
+  #navbar li a:hover::before,
+  #navbar li a:hover:after {
+    width: 50%;
+  }
+  
+  #navbar li a:hover::before {
+    right: 0;
+  }
+  
+  #navbar li a:hover:after {
+    left: 0;
+  }
+  
+  /* Mobile view icon */
+  .menuIcon {
+    cursor: pointer;
+    display: none; 
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    height: 23px;
+    width: 27px;
+    z-index: 1200;
+  }
+  
+  .Icon-bars {
+    background: rgb(13, 26, 38);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30px;
+    height: 3px;
+    transition: all 0.5s ease;
+  }
+  
+  .Icon-bars::before,
+  .Icon-bars::after {
+    background: rgb(13, 26, 38);
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    transition: all 0.5s ease;
+  }
+  
+  .Icon-bars::before {
+    top: -8px;
+  }
+  
+  .Icon-bars::after {
+    bottom: -8px;
+  }
+  
+  .menuIcon.toggle .Icon-bars {
+    background: transparent;
+  }
+  
+  .menuIcon.toggle .Icon-bars::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  .menuIcon.toggle .Icon-bars::after {
+    transform: rotate(45deg);
+    bottom: 0;
+  }
+  @media (max-width: 640px) {
+    .menuIcon {
+      display: block;
+    }
+  }
+  
+  /* Responsive mobile view */
+  #menu {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: block !important;
+  }
+  
+  .overlay-menu {
+    background: lightblue;
+    color: rgb(13, 26, 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* padding-right: 15px; */
+    width: 100vw;
+    height: 100vh;
+    transition: transform 0.3s ease-out;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    transform: translateX(-100%)
+  }
+  
+  .overlay-menu ul,
+  .overlay-menu li {
+    display: block;
+    position: relative;
+  }
+  
+  .overlay-menu li a {
+    display: block;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .overlay-menu li a:hover,
+  .overlay-menu a:active {
+    color: rgb(28, 121, 184);
+  }
